@@ -1,0 +1,44 @@
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "usuario" : "lima",
+    "password" : "hola"
+}
+
+###
+
+GET http://localhost:4000/tareas
+Authorization: Bearer 
+
+
+
+###
+
+POST http://localhost:4000/tareas/nueva
+Authorization: Bearer 123
+Content-Type: application/json
+
+{
+    "tarea" : "otra prueba"
+}
+
+
+###
+
+DELETE http://localhost:4000/tareas/borrar/3
+
+
+###
+
+PUT http://localhost:4000/tareas/actualizar/texto/7
+Content-Type: application/json
+
+{
+    "tarea" : "otro texto de prueba"
+}
+
+
+###
+
+PUT http://localhost:4000/tareas/actualizar/estado/2
