@@ -14,7 +14,7 @@ servidor.use(express.json());
 servidor.use(authRoutes);
 
 // Middleware de autorización para rutas privadas
-//servidor.use(autorizar);
+servidor.use(autorizar);
 
 // Rutas privadas (tareas)
 servidor.use("/tareas", tareasRoutes);
